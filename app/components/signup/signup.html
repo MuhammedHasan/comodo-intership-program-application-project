@@ -1,162 +1,54 @@
-<nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <span class="glyphicon glyphicon-fire"></span>
-        LOGO
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active">
-          <a href="#">Sign Up</a>
-        </li>
-        <li>
-          <a href="#">Login</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Header -->
-<header>
-  <div class="header-content">
-    <div class="header-content-inner">
-      <h1>Help Others Change World</h1>
-      <p>Join us and help other to change world. Many people are waiting for your help.</p>
-      <a href="#" class="btn btn-primary btn-lg">Sign Up Now</a>
-    </div>
-  </div>
-</header>
-
-<!-- Intro Section -->
-<section class="intro">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2 class="section-heading">You have ability to change it.</h2>
-        <p class="text-light">
-          Create better world to live. Join us help other to change world.
-        </p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Sign Up</h3>
+        </div>
+        <div class="panel-body">
+          <form [ngFormModel]="form" (ngSubmit)="onSubmit(form.value)">
+            <div class="form-group">
+              <label for="email" class="control-label">Email</label>
+              <input class="form-control" id="email" placeholder="Email" type="email" [ngFormControl]="form.controls['email']">
+              <span class="text-danger" *ngIf="!form.controls['email'].valid && form.controls['email'].dirty">
+                Field Required
+              </span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="control-label">First Name</label>
+              <input class="form-control" placeholder="First Name" type="text" [ngFormControl]="form.controls['firstName']">
+              <span class="text-danger" *ngIf="!form.controls['firstName'].valid && form.controls['firstName'].dirty">
+                Field Required
+              </span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="control-label">Last Name</label>
+              <input class="form-control" placeholder="Last Name" type="text" [ngFormControl]="form.controls['lastName']">
+              <span class="text-danger" *ngIf="!form.controls['lastName'].valid && form.controls['lastName'].dirty">
+                Field Required
+              </span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="control-label">Password</label>
+              <input class="form-control" placeholder="Password" type="password" [ngFormControl]="form.controls['password']">
+              <span class="text-danger" *ngIf="!form.controls['password'].valid && form.controls['password'].dirty">
+                Field Required
+              </span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="control-label">User Status</label>
+              <select  class="form-control" placeholder="User Status" [ngFormControl]="form.controls['status']">
+                <option> I need help</option>
+                <option> I want to help</option>
+              </select>
+              <span class="text-danger" *ngIf="!form.controls['status'].valid && form.controls['status'].dirty">
+                Field Required
+              </span>
+            </div>
+            <input value="Login" type="submit" class="btn btn-info">
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Content 1 -->
-<section class="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <img class="img-responsive img-circle center-block" src="images/hands.jpg" alt="">
-      </div>
-      <div class="col-sm-6">
-        <h2 class="section-header">Happiness of the helping.</h2>
-        <p class="lead text-muted">
-          Taste the happiness and peace of the helping other. Become happy with making happy to others.
-        </p>
-        <a href="#" class="btn btn-primary btn-lg">Happiness</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Content 2 -->
-<section class="content content-2">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h2 class="section-header">
-          Only a life lived for others is a life worthwhile.
-        </h2>
-        <p class="lead text-light">
-          Change life of others with helping them. That will change your life too.
-        </p>
-        <a href="#" class="btn btn-default btn-lg">Give Life</a>
-      </div>
-      <div class="col-sm-6">
-        <img class="img-responsive img-circle center-block" src="images/two-hands.jpg" alt="">
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Promos -->
-<div class="container-fluid">
-  <div class="row promo">
-    <a href="#">
-      <div class="col-md-4 promo-item item-1">
-        <h3>
-          Work On
-        </h3>
-      </div>
-    </a>
-    <a href="#">
-      <div class="col-md-4 promo-item item-2">
-        <h3>
-          Share
-        </h3>
-      </div>
-    </a>
-
-    <a href="#">
-      <div class="col-md-4 promo-item item-3">
-        <h3>
-          Think
-        </h3>
-      </div>
-    </a>
   </div>
 </div>
-<!-- /.container-fluid -->
-
-<!-- Content 3 -->
-<section class="content content-3">
-  <div class="container">
-    <h2 class="section-header">
-      <span class="glyphicon glyphicon-pushpin text-primary"></span><br>
-      Collective Helping Moment
-    </h2>
-    <p class="lead text-muted">
-      We are collective moment to help others join us and help others.
-    </p>
-    <a href="#" class="btn btn-primary btn-lg">Join Us</a>
-  </div>
-</section>
-
-<footer class="page-footer">
-  <div class="contact">
-    <div class="container">
-      <h2 class="section-heading">Connect Us</h2>
-      <p>
-        <a href="#">
-          <img  src="/images/facebook.png" alt="facebook" />
-        </a>
-        <a href="#">
-          <img src="/images/linkedin.png" alt="linkedin" />
-        </a>
-        <a href="#">
-          <img src="/images/twitter.png" alt="twitter" />
-        </a>
-        <a href="#">
-          <img src="/images/youtube.png" alt="youtube" />
-        </a>
-      </p>
-      <p>
-        <span class="glyphicon glyphicon-envelope"></span>
-        <br>
-        hasancelik@std.sehir.edu.tr
-      </p>
-    </div>
-  </div>
-
-</footer>

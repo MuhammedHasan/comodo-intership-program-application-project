@@ -1,5 +1,5 @@
-<div id="mainBox" [ngFormModel]="form" (ngSubmit)="onSubmit(form.value)">
-  <form>
+<div id="mainBox">
+  <form [ngFormModel]="form" (ngSubmit)="onSubmit(form.value)">
     <img src="images/user.png">
     <div class="form-group">
       <input class="form-control" placeholder="Email" type="email" [ngFormControl]="form.controls['email']">
