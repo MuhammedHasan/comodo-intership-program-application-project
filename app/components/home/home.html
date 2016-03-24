@@ -15,10 +15,10 @@
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="active">
-          <a href="#">Sign Up</a>
+          <a [routerLink]="['Signup']">Sign Up</a>
         </li>
         <li>
-          <a href="#">Login</a>
+          <a [routerLink]="['Login']">Login</a>
         </li>
       </ul>
     </div>
@@ -31,7 +31,7 @@
     <div class="header-content-inner">
       <h1>Help Others Change World</h1>
       <p>Join us and help other to change world. Many people are waiting for your help.</p>
-      <a href="#" class="btn btn-primary btn-lg">Sign Up Now</a>
+      <a [routerLink]="['Signup']" class="btn btn-primary btn-lg">Sign Up Now</a>
     </div>
   </div>
 </header>
@@ -62,9 +62,8 @@
         <p class="lead text-muted">
           Taste the happiness and peace of the helping other. Become happy with making happy to others.
         </p>
-        <a href="#" class="btn btn-primary btn-lg">Happiness</a>
+        <a [routerLink]="['Signup']" class="btn btn-primary btn-lg">Happiness</a>
       </div>
-
     </div>
   </div>
 </section>
@@ -80,7 +79,7 @@
         <p class="lead text-light">
           Change life of others with helping them. That will change your life too.
         </p>
-        <a href="#" class="btn btn-default btn-lg">Give Life</a>
+        <a [routerLink]="['Signup']" class="btn btn-default btn-lg">Give Life</a>
       </div>
       <div class="col-sm-6">
         <img class="img-responsive img-circle center-block" src="images/two-hands.jpg" alt="">
@@ -93,22 +92,21 @@
 <!-- Promos -->
 <div class="container-fluid">
   <div class="row promo">
-    <a href="#">
+    <a>
       <div class="col-md-4 promo-item item-1">
         <h3>
           Work On
         </h3>
       </div>
     </a>
-    <a href="#">
+    <a>
       <div class="col-md-4 promo-item item-2">
         <h3>
           Share
         </h3>
       </div>
     </a>
-
-    <a href="#">
+    <a>
       <div class="col-md-4 promo-item item-3">
         <h3>
           Think
@@ -129,7 +127,7 @@
     <p class="lead text-muted">
       We are collective moment to help others join us and help others.
     </p>
-    <a href="#" class="btn btn-primary btn-lg">Join Us</a>
+    <a [routerLink]="['Signup']" class="btn btn-primary btn-lg">Join Us</a>
   </div>
 </section>
 
