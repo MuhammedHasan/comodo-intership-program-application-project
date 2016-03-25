@@ -1,8 +1,6 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {DonationComponent} from './donation/donation.component';
-import {ProfileComponent} from './profile/profile.component'
-import {NewDonationComponent} from './newDonation/newDonation.component'
 
 @Component({
   selector: 'helper',
@@ -14,9 +12,7 @@ import {NewDonationComponent} from './newDonation/newDonation.component'
   directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-  { path: '/donation', name: 'Donation', component: DonationComponent },
-  { path: '/profile', name: 'Profile', component: ProfileComponent },
-  { path: '/new-donation', name: 'NewDonation', component: NewDonationComponent },
+  { path: '/donation', name: 'Helper', component: DonationComponent },
 ])
 export class HelperComponent {
 
