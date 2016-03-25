@@ -1,0 +1,9 @@
+.panel-footer, .panel-body > p {
+  text-align: center;
+}
+.panel-footer a:hover{
+  text-decoration: none;
+}
+.input-group{
+  margin-bottom: 20px;
+}

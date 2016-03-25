@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {ProfileComponent} from './profile/profile.component';
 import {DonationComponent} from './donation/donation.component';
-
+import {ReservationComponent} from './reservation/reservation.component'
 @Component({
   selector: 'helper',
   templateUrl: '/app/components/panel/needy/needy.html',
@@ -14,7 +14,8 @@ import {DonationComponent} from './donation/donation.component';
 })
 @RouteConfig([
   { path: '/profile', name: 'Profile', component: ProfileComponent },
-  { path: '/donation', name: 'Donation', component: DonationComponent }
+  { path: '/donation', name: 'Donation', component: DonationComponent },
+  { path: '/reservation', name: 'Reservation', component: ReservationComponent },
 ])
 export class NeedyComponent {
 
