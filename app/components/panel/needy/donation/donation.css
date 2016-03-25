@@ -1,19 +1,9 @@
-#mainBox {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -160px;
-  margin-top: -306px;
-  width: 320px;
-  padding: 30px;
-  border: 1px solid #ccc;
-  border-bottom: 2px solid #bbb;
-  border-top: 1px solid #ddd;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+.panel-footer, .panel-body > p {
+  text-align: center;
 }
-
-input[type=submit] {
-    width:255px;
+.panel-footer a:hover{
+  text-decoration: none;
+}
+.input-group{
+  margin-bottom: 20px;
 }

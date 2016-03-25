@@ -1,6 +1,7 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {HelperComponent} from './helper/helper.component';
+import {NeedyComponent} from './needy/needy.component';
 
 @Component({
   selector: 'panel',
@@ -9,5 +10,6 @@ import {HelperComponent} from './helper/helper.component';
 })
 @RouteConfig([
   { path: '/helper/...', name: 'Helper', component: HelperComponent },
+  { path: '/needy/...', name: 'Needy', component: NeedyComponent },
 ])
 export class PanelComponent { }

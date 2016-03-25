@@ -5,8 +5,8 @@ import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Validators} from 'angular2/c
 
 @Component({
   selector: 'helper',
-  templateUrl: '/app/components/panel/helper/profile/profile.html',
-  styleUrls: ['app/components/panel/helper/profile/profile.css'],
+  templateUrl: '/app/components/panel/needy/profile/profile.html',
+  styleUrls: ['app/components/panel/needy/profile/profile.css'],
   directives: [ROUTER_DIRECTIVES, FORM_DIRECTIVES]
 })
 export class ProfileComponent {
@@ -16,6 +16,7 @@ export class ProfileComponent {
       "email": ["", Validators.required],
       "firstName": ["", Validators.required],
       "lastName": ["", Validators.required],
+      "description": ["", Validators.required]
     });
   }
 

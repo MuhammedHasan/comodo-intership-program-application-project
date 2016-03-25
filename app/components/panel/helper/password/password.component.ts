@@ -5,17 +5,16 @@ import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Validators} from 'angular2/c
 
 @Component({
   selector: 'helper',
-  templateUrl: '/app/components/panel/helper/profile/profile.html',
-  styleUrls: ['app/components/panel/helper/profile/profile.css'],
+  templateUrl: '/app/components/panel/helper/password/password.html',
   directives: [ROUTER_DIRECTIVES, FORM_DIRECTIVES]
 })
 export class ProfileComponent {
   form: ControlGroup;
   constructor(fb: FormBuilder) {
     this.form = fb.group({
-      "email": ["", Validators.required],
-      "firstName": ["", Validators.required],
-      "lastName": ["", Validators.required],
+      "oldpassword": ["", Validators.required],
+      "newpassword": ["", Validators.required],
+      "renewpassword": ["", Validators.required],
     });
   }
 

@@ -5,8 +5,8 @@ import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Validators} from 'angular2/c
 
 @Component({
   selector: 'helper',
-  templateUrl: '/app/components/panel/helper/donation/donation.html',
-  styleUrls: ['app/components/panel/helper/donation/donation.css'],
+  templateUrl: '/app/components/panel/needy/donation/donation.html',
+  styleUrls: ['app/components/panel/needy/donation/donation.css'],
   directives: [ROUTER_DIRECTIVES, FORM_DIRECTIVES]
 })
 export class DonationComponent {
