@@ -7,3 +7,7 @@
 a.btn.btn-info{
   margin-bottom: 20px;
 }
+.img-responsive{
+  height: 150px;
+  margin: auto;
+}

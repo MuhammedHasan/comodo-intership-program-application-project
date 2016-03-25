@@ -1,21 +1,22 @@
 <div class="row">
   <div class="col-lg-12">
-    <h1 class="page-header">Title Of Donation</h1>
+    <h1 class="page-header">{{donation.title}}</h1>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
-    <img src="#" alt=""/>
+    <img [src]="donation.image" alt="" class="img-responsive img-thumbnail" />
   </div>
   <div class="col-md-8">
     <div class="row">
       <div class="col-md-12">
-        City: Istanbul
+        City:
+        {{donation.city }}
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        Destr ipti onfgh fgh aads asd kas asdas
+        {{ donation.description }}
       </div>
     </div>
   </div>
