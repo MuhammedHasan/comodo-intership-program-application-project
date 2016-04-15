@@ -20,8 +20,7 @@ export class LoginComponent {
     }
 
     onSubmit(value: string) {
-        this.us.authenticate(value['email'], value['password']);
-        let userStatus = this.us.authentication();
+        let userStatus = this.us.authenticate(value['email'], value['password']);
         if (userStatus == 'admin')
             this.router.navigate(['Panel','Admin']);
         if (userStatus == 'helper')

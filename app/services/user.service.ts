@@ -24,12 +24,11 @@ export class UserService {
     authenticate(email, password) {
         let users: Array<User> = this.getAllUser();
         let user = users.filter(
-          (x) => x.email == email && x.password == password)[0];
-        if(user)
-          localStorage.setItem("authentication", user.status);
-    }
-
-    authentication(){
-      return localStorage.getItem("authentication");
+            (x) => x.email == email && x.password == password)[0];
+        if (user) {
+            localStorage.setItem("authentication", user.status);
+            return user.status;
+        }
+        return 'anonymous';
     }
 }
