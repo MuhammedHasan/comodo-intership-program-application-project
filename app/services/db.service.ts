@@ -13,6 +13,7 @@ export class DbService {
 
     initDb() {
         localStorage.setItem("donations", JSON.stringify([]));
+        localStorage.setItem("reservation", JSON.stringify([]));
         localStorage.setItem("authentication", "anonymous");
 
         let admin = new User();

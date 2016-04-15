@@ -1,11 +1,6 @@
 import {Injectable} from 'angular2/core'
-
-export class Donation {
-    title: string;
-    description: string;
-    image: string;
-    city: string;
-}
+import {Donation} from './donation';
+export * from './donation';
 
 @Injectable()
 export class DonationService {
@@ -33,5 +28,13 @@ export class DonationService {
     getByCity(city): Array<Donation> {
         let donations = this.getAllDonation();
         return donations.filter((d) => d.city == city);
+    }
+
+    deleteByTitle(title: string) {
+        let donations = this.getAllDonation();
+        localStorage.setItem("donations",
+            JSON.stringify(donations.filter((d) => d.title != title))
+            );
+        return this.getByTitle(title);
     }
 }

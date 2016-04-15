@@ -6,9 +6,9 @@
 <div class="row">
   <div class="col-md-8">
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="#i of [1,2,3,4]">
-        <a>
-          asd
+      <li class="list-group-item" *ngFor="#i of reservations">
+        <a [routerLink]="['ReservationDetail', {'title':i.title}]">
+          {{ i.title }}
         </a>
       </li>
     </ul>

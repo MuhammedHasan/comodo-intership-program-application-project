@@ -5,9 +5,10 @@ import {HTTP_PROVIDERS} from 'angular2/http';
 import {DonationService} from './services/donation.service';
 import {DbService} from './services/db.service';
 import {UserService} from './services/user.service';
-
+import {ReservationService} from './services/reservation.service';
 bootstrap(AppComponent, [
-    ROUTER_PROVIDERS, HTTP_PROVIDERS, DonationService, UserService
+    ROUTER_PROVIDERS, HTTP_PROVIDERS, DonationService,
+    UserService, ReservationService
 ]);
 
 let db = new DbService();

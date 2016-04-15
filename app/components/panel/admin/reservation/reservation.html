@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-lg-12">
-    <h1 class="page-header">Donations</h1>
+    <h1 class="page-header">Reservation</h1>
   </div>
   <table class="table">
-    <tr *ngFor="#d of donations">
+    <tr *ngFor="#d of reservations">
       <td>
         {{ d.title }}
       </td>
@@ -15,6 +15,9 @@
       </td>
       <td>
         {{ d.city }}
+      </td>
+      <td>
+        {{ d.reservationDescription }}
       </td>
       <td>
         <a class="alert-danger">
